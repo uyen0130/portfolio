@@ -10,41 +10,77 @@
        color: #963c48;
         padding: 10px;
     }
+    .header {
+        background-color: #ffe1e4;
+        border-radius: 10px;
+         max-width:900px;
+        width: 80%; /* make header responsive */
+        display: flex; align-items: center;
+        justify-content: center; /* center the header */
+        margin: 0 auto 30px; 
+    }
+    .header h1 {
+        font-size: 36px;
+        text-align: center;
+        padding: 20px; /* space around text */
+
+    }
+
     .about_me {
         background-color: #ffe1e4;
-        font-family: 'Saira', sans-serif;
         color: #963c48;
         padding: 10px;
         display: flex;
         align-items: flex-start; /* vertically align image & text */
-        gap: 15px;    
+        gap: 15px;   
+        border-radius: 10px; /* rounded corners */ 
+        max-width:900px;
+        width: 80%; 
+        margin: 0 auto;
+
     }
-    .about_me img {
-      width: 150px;    /* control image size */
-      height: 150px; /* control image size */
-      border-radius: 100px;
-    }
-   
-    .about_me h3 {
-        font-size: 24px;
-       
-        
-    }
-    .about_me p {
-        font-size: 16px;
-       margin-top: 50px;
-       margin-right: -1px;
-    }
+
+
+.about_me img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 3px;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column; /* stack heading and paragraph */
+}
+
+.about_me h3 {
+  font-size: 30px;
+  margin:  8px; /* small space under heading */
+  text-align: center;
+}
+
+.about_me p {
+  font-size: 18px;
+  margin: 0; /* no big gaps */
+}
     
 </style>
 
 </head>
 <body>
-    <h1> Uyen Nguyen</h1>
+    <div class="header">
+        <h1> Uyen Nguyen</h1>
+    </div>
+
+
     <div class="about_me">
         <img src="me.png" alt="My photo">
+        <div class="text-block">
         <h3>About me</h3>
-        <p>Hi my name is Uyen</p>
+        <p>I’m a Computer and Electrical Engineering student who’s equal parts problem-solver and daydreamer. I love tinkering with circuits, coding ideas into reality, and finding the creative spark in technical work. Quietly curious and values-driven, I’m all about building things that work beautifully and mean something too.</p>
+        </div>
     </div>
 </body>
 </html>
