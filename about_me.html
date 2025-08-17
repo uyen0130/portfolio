@@ -50,7 +50,8 @@
         border-radius: 10px; /* rounded corners */ 
         max-width:900px;
         width: 80%; 
-        margin: 0 auto;
+        margin: 0 auto 40px; /* add 40px space below */
+
 
     }
 
@@ -79,6 +80,33 @@
   font-size: 18px;
   margin: 0; /* no big gaps */
 }
+
+ .education {
+      background-color: #ffe1e4;
+      border-radius: 10px;
+      max-width: 900px;
+      width: 80%; 
+        margin: 0 auto;
+      
+      padding: 20px;
+      display: flex; 
+      flex-direction:column;
+    
+    }
+    .education h1 {
+      font-size: 32px;
+      margin: 0 0 3px;
+    }
+    .education h3 {
+      font-size: 22px;
+      margin: 0 0 6px;
+      text-align: center;
+    }
+    .education p {
+      font-size: 18px;
+      margin: 0;
+      text-align: center;
+    }
     
 </style>
 
@@ -89,7 +117,9 @@
         <h2>Portfolio</h2>
         <h3> Uyen Nguyen</h3>
     </div>
-
+    <div class="buttons">
+        
+    </div>
 
     <div class="about_me">
         <img src="me.png" alt="My photo">
@@ -98,5 +128,12 @@
         <p>I’m a Computer and Electrical Engineering student who’s equal parts problem-solver and daydreamer. I love tinkering with circuits, coding ideas into reality, and finding the creative spark in technical work. Quietly curious and values-driven, I’m all about building things that work beautifully and mean something too.</p>
         </div>
     </div>
+
+    <div class="education">
+        <h1> Education </h1>
+        <h3> San Jose Sates </h3> 
+        <p>B.S Computer Engineering - Expected june 2027</p>
+     </div>
+    
 </body>
 </html>
