@@ -124,10 +124,22 @@
 
             <div class="project-media">
 
-                <video controls>
+                <video controls playsinline preload="metadata" poster="SnowCatcher.png" id="project-video">
                     <source src="IMG_3447.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <p id="video-error-msg" style="display:none; font-size:14px; color:#963c48; text-align:center; max-width:250px; margin:0;">
+                    Video could not play in this browser. Try opening in Safari, or
+                    <a href="IMG_3447.mp4" download style="color:#963c48;">download the video</a>.
+                </p>
+                <script>
+                    (function() {
+                        var v = document.getElementById('project-video');
+                        var msg = document.getElementById('video-error-msg');
+                        v.addEventListener('error', function() { msg.style.display = 'block'; });
+                        v.addEventListener('canplay', function() { msg.style.display = 'none'; });
+                    })();
+                </script>
 
                 <img src="SnowCatcher.png" alt="Snow Catcher ESP32 project">
 
