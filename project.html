@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Projects</title>
+
+    <style>
+        body {
+            background-color: #f4c5cb;
+            font-family: 'Saira', sans-serif;
+            color: #963c48;
+            padding: 10px;
+        }
+
+        .header {
+            background-color: #ffe1e4;
+            border-radius: 10px;
+            max-width: 900px;
+            width: 80%;
+            margin: 0 auto 30px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .projects {
+            background-color: #ffe1e4;
+            border-radius: 10px;
+            max-width: 900px;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .project-media {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project-media video,
+        .project-media img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .project-media video {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-media img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-text {
+            flex: 1;
+        }
+
+        .project-text h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 0;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: #963c48;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .back-btn:hover {
+            background-color: #b24f5d;
+        }
+
+        @media (max-width: 700px) {
+            .project-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .project-media video,
+            .project-media img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="projects">
+
+        <div class="project-card">
+
+            <div class="project-media">
+
+                <video controls>
+                    <source src="IMG_3447.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <img src="SnowCatcher.png" alt="Snow Catcher ESP32 project">
+
+            </div>
+
+            <div class="project-text">
+
+                <h2>❄️ Snow Catcher Game</h2>
+
+                <p>
+                    Created a Snow Catcher game using an ESP32, OLED display,
+                    push buttons, and a buzzer. The player moves a line left
+                    and right to catch falling snow dots on the screen. The
+                    score increases when the snow is caught, and the game ends
+                    when the snow reaches the bottom.
+                </p>
+
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back-btn">← Back Home</a>
+
+    </div>
+
+</body>
+</html>
